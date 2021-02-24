@@ -1,0 +1,16 @@
+.vcr{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 50%;
+  width: 94vw;
+  padding-bottom: 4vh;
+  border-bottom: 10rpx solid #dde6dd;
+  margin:2vh 0;
+  transform: translate(-50%);
+}
+.vcr>text{
+  display: block;
+  width: 100vw;
+  font-size: 35rpx;
+}

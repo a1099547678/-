@@ -1,0 +1,172 @@
+ page{
+  display: flex;
+  width: 100%;
+  height: 100%;
+} 
+/* 背景 */
+.bg{
+  width: 100vw;
+  height: 100vh;
+}
+/* 播放音乐 */
+.playMusic{
+  position: fixed;
+  right: 2vh;
+  width: 10vh;
+  height: 10vh;
+  z-index: 2;
+}
+.playMusic>image:nth-child(1){
+  position: absolute;
+  top: 3vw;
+  right: 2vw;
+  width: 80rpx;
+  height: 80rpx;
+  animation: record 15s linear 1s infinite;
+}
+.playMusic>image:nth-child(2){
+  position: absolute;
+  top: 3vw;
+  right: 0vw;
+  width: 28rpx;
+  height: 80rpx;
+}
+/* 播放动画 */
+.playMusic-play>image:nth-child(1){
+  animation-play-state: running;
+}
+.playMusic-play>image:nth-child(2){
+  animation: toneare-start 1s linear forwards;
+}
+/* 暂停动画 */
+.playMusic-paused>image:nth-child(1){
+  animation-play-state: paused;
+}
+.playMusic-paused>image:nth-child(2){
+  animation: toneare-end 1s linear forwards;
+}
+/* 唱片旋转 */
+@keyframes record
+{
+  from{transform:rotate(0deg);}
+  to{transform:rotate(360deg);}
+}
+/* 唱臂开始 */
+@keyframes toneare-start
+{
+  from{transform:rotate(0deg);}
+  to{transform:rotate(30deg);}
+}
+/* 唱臂结束 */
+@keyframes toneare-end
+{
+  from{transform:rotate(30deg);}
+  to{transform:rotate(0deg);}
+}
+/* 动态文字 */
+.literal{
+  display: block;
+  position: fixed;
+  left: 50%;
+  width: 40vh;
+  height: 23vh;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+/* 邀请函 */
+.invite{
+  display: block;
+  position: fixed;
+  top: 24vh;
+  left: 50%;
+  width: 30vh;
+  height: 10vh;
+  transform: translateX(-50%);
+  text-align: center;
+  line-height: 95rpx;
+  color: #ff5f8e;
+  font-size: 87rpx;
+  font-weight: 1000;
+  z-index: 1;
+}
+/* 新人图片 */
+.photograph{
+  display: block;
+  position: fixed;
+  top: 35vh;
+  left: 50%;
+  width: 30vh;
+  height: 30vh;
+  border: 0.3vh solid #ff5f8e;
+  border-radius: 15vh;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+/* name */
+.name{
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 66vh;
+  left: 50%;
+  width: 42.5vh;
+  height: 12vh;
+  font-weight: 700;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.name>view{
+  flex: 1;
+  text-align: center;
+}
+.name>view:nth-child(1)>image,
+.name>view:nth-child(3)>image
+{
+  display: block;
+  width: 3vh;
+  height: 3vh;
+  border: 0.2vh solid #ff5f8e;
+  border-radius: 1.5vh;
+}
+.name>view:nth-child(1)>image{
+  position: absolute;
+  top: 0vh;
+  left: 13vh;
+}
+.name>view:nth-child(3)>image{
+  position: absolute;
+  top: 0vh;
+  left: 41vh;
+}
+.name>view:nth-child(2)>image{
+  flex: 1;
+  width: 11vh;
+  height: 11vh;
+  transform: scale(0.8)
+}
+.name>view>text{
+  color: #ff5f8e;
+  font-size: 43rpx;
+}
+/* 地址 */
+.address{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  top: 77vh;
+  left: 50%;
+  width: 50vh;
+  height: 15vh;
+  color: #ff5f8e;
+  text-align: center;
+  letter-spacing: 0.1vh;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.address>text{
+  flex: 1;
+}
+.address>text:nth-child(1){
+  font-weight: 700;
+}

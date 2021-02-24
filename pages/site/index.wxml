@@ -1,0 +1,7 @@
+<map longitude="114.461853"
+latitude="30.436154"
+scale="{{scale}}"
+markers="{{markers}}"
+bindmarkertap="markertap"
+></map>
+<button bindtap="place">查看我的位置</button>

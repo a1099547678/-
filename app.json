@@ -1,0 +1,57 @@
+{
+  "pages": [
+    "pages/invite/index",
+    "pages/picture/index",
+    "pages/happyTime/index",
+    "pages/site/index",
+    "pages/guest/index"
+  ],
+  "window": {
+    "navigationBarBackgroundColor" : "#ff5f8e"
+  },
+  "tabBar":{
+    "borderStyle": "white",
+    "color": "#ccc",
+    "backgroundColor": "#fff",
+    "selectedColor": "#ff5f8e",
+    "list":[{
+      "pagePath": "pages/invite/index",
+      "text": "邀请函",
+      "iconPath": "./images/invite.png",
+      "selectedIconPath": "/images/invite.png"
+    },{
+      "pagePath": "pages/picture/index",
+      "text": "照片",
+      "iconPath": "./images/marry.png",
+      "selectedIconPath": "/images/marry.png"
+    },{
+      "pagePath": "pages/happyTime/index",
+      "text": "美好时光",
+      "iconPath": "./images/video.png",
+      "selectedIconPath": "/images/video.png"
+    },{
+      "pagePath": "pages/site/index",
+      "text": "婚礼地点",
+      "iconPath": "./images/map.png",
+      "selectedIconPath": "/images/map.png"
+    },{
+      "pagePath": "pages/guest/index",
+      "text": "宾客信息",
+      "iconPath": "./images/guest.png",
+      "selectedIconPath": "/images/guest.png"
+    }]
+  },
+  "requiredBackgroundModes": ["audio"],
+  "sitemapLocation": "sitemap.json",
+  "plugins": {
+    "tencentvideo": {
+      "version": "1.3.13",
+      "provider": "wxa75efa648b60994b"
+    }
+  },
+  "permission":{
+    "scope.userLocation":{
+      "desc":"需要获取您的位置"
+    }
+  }
+}

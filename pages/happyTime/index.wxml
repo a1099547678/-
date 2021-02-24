@@ -1,0 +1,26 @@
+<view wx:for="{{vid}}" wx:key="{{item.id}}" class="vcr">
+  <text>标题：{{item.title}}</text>
+  <text>时间：{{formatTime.dates(item.time)}}</text>
+  <txv-video vid="{{item.src}}"
+    playerid="{{item.id}}"
+    controls="true"
+    isHiddenStop="true"
+  ></txv-video>
+</view>
+<wxs module = "formatTime">
+  module.exports = {
+    dates:function(sj){
+      var date = getDate(sj)
+      var y = date.getFullYear()
+      var m = date.getMonth() + 1
+      var d = date.getDate()
+      var h = date.getHours()
+      h = h < 0 ? '0' + h : h
+      var i = date.getMinutes()
+      i = i < 0 ? '0' + i : i
+      var s = date.getSeconds()
+      s = s < 0 ? '0' + s : s
+      return y + '-' + m + '-' + d + ' ' + h + ':' + i + ':' + s
+    }
+  }
+</wxs>

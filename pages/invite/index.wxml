@@ -1,0 +1,32 @@
+<!-- 背景图 -->
+<image src="../../images/bg_1.png" class="bg"></image>
+<!-- 播放按钮 -->
+<view class="playMusic playMusic-{{isPlay ? 'play' : 'paused'}}" bindtap="music">
+    <image src="../../images/music_icon.png"></image>
+    <image src="../../images/music_play.png"></image>
+</view>
+<!-- 动态文字 -->
+<image src="../../images/save_the_date.gif" class="literal"></image>
+<!-- 邀请函 -->
+<view class="invite">邀请函</view>
+<!-- 新人图片 -->
+<image src="../../images/avatar.png" class="photograph"></image>
+<!-- 名字 -->
+<view class="name">
+    <view bindtap="callBoy">
+        <text>灰太狼\n新郎</text>
+        <image src="../../images/tel.png"></image>
+    </view>
+    <view>
+        <image src="../../images/wedding.png"></image>
+    </view>
+    <view bindtap="callGirl">
+       <text>红太狼\n新娘</text>
+        <image src="../../images/tel.png"></image>
+    </view>
+</view>
+<!-- 地址 -->
+<view class="address">
+    <text>\n我们诚邀您来参加我们的婚礼</text>
+    <text>时间：2019年1月28日\n地点：北京市海淀区xx路xx酒店</text>
+</view>

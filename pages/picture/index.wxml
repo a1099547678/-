@@ -1,0 +1,15 @@
+<!-- 轮播图 -->
+<swiper class="moveImage" vertical="true" autoplay="true" indicator-dots="true" indicator-color="#fff" indicator-active-color="#ff5f8e" circular="true" duration="1000">
+  <swiper-item>
+    <image src="../../images/timg1.jpg"></image>
+  </swiper-item>
+  <swiper-item>
+    <image src="../../images/timg2.jpg"></image>
+  </swiper-item>
+  <swiper-item>
+    <image src="../../images/timg3.jpg"></image>
+  </swiper-item>
+  <swiper-item>
+    <image src="../../images/timg4.jpg"></image>
+  </swiper-item>
+</swiper>

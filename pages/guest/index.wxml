@@ -1,0 +1,24 @@
+<!-- 背景 -->
+<image src="../../images/bj_2.png" class="bg"></image>
+<!-- 表单 -->
+<form bindsubmit="submit">
+  <view class="menu">
+    <view>
+      <input type="text" placeholder="请输入您的姓名" placeholder-style="color:#ff5e8c" maxlength="8" name="guest" bindblur="call"></input>
+    </view>
+    <view>
+      <input type="text" placeholder="您的手机号码" placeholder-style="color:#ff5e8c" maxlength="11" name="phone" bindblur="phone"></input>
+    </view>
+    <view>
+      <picker range="{{ranges}}" value="{{index}}" range-key="content" bindchange="paset" name="number">
+       <view class="picker-jz">参加婚礼的人数：{{ranges[index].content}}</view>
+      </picker>
+    </view>
+    <view>
+      <input type="text" placeholder="输入您的祝福语" placeholder-style="color:#ff5e8c"name="bless" bindblur="bless"></input>
+    </view>
+    <view>
+      <button form-type="submit" class="rush" hover-class="tj" disabled="{{disabledFlag}}">{{tj}}</button>
+    </view>
+  </view>
+</form>
